@@ -39,7 +39,7 @@ jobs:
         pytest
     - name: Test coverage
       run: |
-        pytest --cov-report html:cov_html --cov tests/
+        pytest --cov-report html:cov_html --cov
     - name: Archive code coverage results
       uses: actions/upload-artifact@v4
       with:
