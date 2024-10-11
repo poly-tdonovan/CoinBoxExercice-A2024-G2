@@ -41,7 +41,7 @@ jobs:
       run: |
         pytest --cov-report html:cov_html --cov
     - name: Archive code coverage results
-      run: | ls
+      run: ls
       uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
